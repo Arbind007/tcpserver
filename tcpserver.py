@@ -19,7 +19,7 @@ def handle_client(client_socket):
     second = "[*] Received: %s" % request
     print(second)
 
-    client_socket.send("ACK!")
+    client_socket.send("ACK!".encode())
     client_socket.close()
 
 
